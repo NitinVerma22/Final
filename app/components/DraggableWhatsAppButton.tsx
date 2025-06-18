@@ -78,7 +78,7 @@ export default function DraggableWhatsAppButton() {
         href="https://wa.me/+918853008603"
         target="_blank"
         rel="noopener noreferrer"
-        onClick={handleClick} // ← Add event trigger
+        onClick={handleClick} 
         className="w-full h-full flex items-center justify-center"
       >
         <img

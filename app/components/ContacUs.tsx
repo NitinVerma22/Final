@@ -13,7 +13,7 @@ export default function ContactPage() {
   const [modalOpen, setModalOpen] = React.useState(false);
   return (
     <div className="min-h-screen bg-[#ede7e3] pt-4">
-                  <h1 className='text-yellow-800 text-center text-4xl sm:text-4xl font-semibold pt-20 px-4 pb-8'>Contact Us </h1>
+      <h1 className='text-yellow-800 text-center text-4xl sm:text-4xl font-semibold pt-20 px-4 pb-8'>Contact Us </h1>
 
       {/* Hero Section */}
       <div className="relative h-[60vh] md:w-[70vw] w-full mx-auto bg-transparent">
@@ -25,7 +25,7 @@ export default function ContactPage() {
           playsInline
           className="absolute inset-0 w-full h-full object-cover"
         />
-        
+
       </div>
 
       {/* Contact Info & CTA (No Form) */}
@@ -64,9 +64,6 @@ export default function ContactPage() {
             <a href="https://www.facebook.com/nqdesigns.lucknow?rdid=pZYEkQn3l8BTFA4c&share_url=https%3A%2F%2Fwww.facebook.com%2Fshare%2F1Kkqms4D8p%2F#" className="text-xl text-gray-700 hover:text-black transition transform hover:scale-110">
               <FaFacebook />
             </a>
-            {/* <a href="#" className="text-xl text-gray-700 hover:text-black transition transform hover:scale-110">
-              <FaLinkedin />
-            </a> */}
           </div>
         </motion.div>
 

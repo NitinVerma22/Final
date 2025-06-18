@@ -5,6 +5,7 @@ import React, { useState, useEffect, useRef } from 'react';
 import AnimatedOnScroll from '../components/AnimatedOnScroll';
 import { motion } from 'framer-motion';
 import PortfolioSection from '../components/PortfolioSection';
+import SEO from '../components/SEO';
 
 const projects = [
   {
@@ -59,6 +60,13 @@ const PortfolioPage = () => {
   }, []);
 
   return (
+    <>
+          <SEO
+        title="Top Interior Designer in Lucknow | NQ Designs"
+        description="NQ Designs is the best interior design and architecture company in Lucknow. We provide modern home interiors, custom furniture, and turnkey renovation services."
+        keywords="interior design Lucknow, interior designer in Lucknow, architecture firm, home renovation, best interior company, modern house design, kitchen interior, furniture design, Lucknow architecture firm"
+      />
+
     <div>
       <main className="space-y-8 md:space-y-24 px-4 sm:px-8 md:px-16 pt-18 w-full max-w-screen-xl mx-auto bg-none">
         {/* About Section */}
@@ -114,7 +122,8 @@ const PortfolioPage = () => {
                     isExpanded ? 'line-clamp-none' : 'line-clamp-3'
                   } md:line-clamp-none`}
                 >
-                  As the Founder and Managing Director of NQ Design Pvt. Ltd., I’ve always believed
+
+
                   that great design is where vision meets purpose. With a background in
                   architecture, construction, and interior design, my goal has been to lead projects
                   that are not only aesthetically beautiful but also deeply functional and enduring.
@@ -278,6 +287,7 @@ const PortfolioPage = () => {
         
       </main>
     </div>
+    </>
   );
 };
 

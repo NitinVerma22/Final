@@ -1,7 +1,14 @@
 import React from "react";
+import SEO from "../components/Seo";
 
 const DisclaimerPage = () => {
   return (
+    <>       <SEO
+        title="Top Interior Designer in Lucknow | NQ Designs"
+        description="NQ Designs is the best interior design and architecture company in Lucknow. We provide modern home interiors, custom furniture, and turnkey renovation services."
+        keywords="interior design Lucknow, interior designer in Lucknow, architecture firm, home renovation, best interior company, modern house design, kitchen interior, furniture design, Lucknow architecture firm"
+      />
+ 
     <div className="max-w-4xl mx-auto p-6 text-gray-800">
       <h1 className="text-3xl font-bold mb-6">Disclaimer</h1>
 
@@ -51,6 +58,7 @@ const DisclaimerPage = () => {
         Website: <a href="https://nqdesigns.co" className="text-blue-600 underline">https://nqdesigns.co</a>
       </p>
     </div>
+    </>
   );
 };
 

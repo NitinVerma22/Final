@@ -3,6 +3,26 @@
 import { useState } from 'react';
 import { motion } from 'framer-motion';
 import Image from 'next/image';
+import SEO from '../components/SEO';
+
+export const metadata = {
+  title: 'Projects | NQ Designs',
+  description: 'Explore our residential, commercial, and apartment design projects.',
+  metadataBase: new URL('https://nqdesigns.co'),
+  openGraph: {
+    title: 'Our Projects - NQ Designs',
+    description: 'View our stunning interior and architectural project portfolio.',
+    url: 'https://nqdesign.co/projects',
+    images: [
+      {
+        url: '/og-image.png',
+        width: 1200,
+        height: 630,
+      },
+    ],
+    type: 'website',
+  },
+}
 
 type Project = {
   title: string;
@@ -259,6 +279,12 @@ export default function AllProjectsWithFilters() {
 
   return (
     <>
+    
+      <SEO
+        title="Top Interior Designer in Lucknow | NQ Designs"
+        description="NQ Designs is the best interior design and architecture company in Lucknow. We provide modern home interiors, custom furniture, and turnkey renovation services."
+        keywords="interior design Lucknow, interior designer in Lucknow, architecture firm, home renovation, best interior company, modern house design, kitchen interior, furniture design, Lucknow architecture firm"
+      />
 
     <section className="py-15 bg-none">
       <div className="max-w-6xl mx-auto px-4">

@@ -1,16 +1,15 @@
 "use client";
-
 import { useState } from "react";
 import { motion } from "framer-motion";
 import Image from "next/image";
 import Link from "next/link";
 import { FaEnvelope, FaFacebook, FaInstagram, FaPhone } from "react-icons/fa";
 import FreeConsultationModal from "./FreeConsultationModal";
-import {event} from '../utils/gtag';
+import { event } from '../utils/gtag';
 const navItems = [
   { name: "Home", path: "/" },
   { name: "Projects", path: "/projects" },
-    { name: "About Us", path: "/#portfolio" },
+  { name: "About Us", path: "/#portfolio" },
   { name: "Contact Us", path: "/#contact" },
 ];
 
@@ -60,13 +59,13 @@ export default function Header() {
         </div>
 
         {/* Social Icons */}
-        
+
         <div className="flex  space-x-5 ml-12 border rounded-full p-2 px-2 border-yellow-800">
-           <a href="tel:+918853008603" target="_blank" rel="noopener noreferrer"><FaPhone className="text-yellow-800 text-lg" /></a>
+          <a href="tel:+918853008603" target="_blank" rel="noopener noreferrer"><FaPhone className="text-yellow-800 text-lg" /></a>
           <a href="https://www.facebook.com/nqdesigns.lucknow" target="_blank" rel="noopener noreferrer"><FaFacebook className="text-yellow-800 text-lg" /></a>
           <a href="https://www.instagram.com/_nqdesigns" target="_blank" rel="noopener noreferrer"><FaInstagram className="text-yellow-800 text-lg" /></a>
           <a href="mailto:designsnq@gmail.com" target="_blank" rel="noopener noreferrer"><FaEnvelope className="text-yellow-800 text-lg" /></a>
-         
+
         </div>
 
         {/* Hamburger */}
@@ -120,20 +119,20 @@ export default function Header() {
               transition={{ delay: 0.4 }}
               className="pt-6 w-full"
             >
-             <button
-  onClick={() => {
-    setMenuOpen(false);
-    setModalOpen(true);
-    event({
-      action: 'click_free_consultation',
-      category: 'engagement',
-      label: 'Free Consultation Button (Mobile Menu)',
-    });
-  }}
-  className="w-full py-3 text-sm bg-yellow-800 text-white font-bold rounded-md hover:bg-yellow-600 transition shadow-md animate-pulse"
->
-  Free Consultation
-</button>
+              <button
+                onClick={() => {
+                  setMenuOpen(false);
+                  setModalOpen(true);
+                  event({
+                    action: 'click_free_consultation',
+                    category: 'engagement',
+                    label: 'Free Consultation Button (Mobile Menu)',
+                  });
+                }}
+                className="w-full py-3 text-sm bg-yellow-800 text-white font-bold rounded-md hover:bg-yellow-600 transition shadow-md animate-pulse"
+              >
+                Free Consultation
+              </button>
 
             </motion.div>
           </motion.div>

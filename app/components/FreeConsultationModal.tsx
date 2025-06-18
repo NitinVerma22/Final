@@ -106,7 +106,7 @@ export default function FreeConsultationModal({ isOpen, onClose }: FreeConsultat
                   className="w-full border border-gray-300 p-3 rounded-lg"
                 >
                   <option value="">Select Budget Range</option>
-                  <option value="1–5 Lakh">1–5 Lakh</option>
+                  <option value="1–5 Lakh">3–5 Lakh</option>
                   <option value="5–10 Lakh">5–10 Lakh</option>
                   <option value="10–25 Lakh">10–25 Lakh</option>
                   <option value="25–50 Lakh">25–50 Lakh</option>
