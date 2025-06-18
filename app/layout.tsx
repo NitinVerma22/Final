@@ -3,7 +3,6 @@ import { Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
 import DraggableWhatsAppButton from "./components/DraggableWhatsAppButton";
 import Header from "./components/Header";
-import MobileNav from "./components/MobileNav";
 import Footer from "./components/Footer";
 import Analytics from "./components/Analytics";
 
@@ -66,7 +65,6 @@ export default function RootLayout({ children }: Readonly<{
         {children}
         <DraggableWhatsAppButton />
         <Footer/>
-        <MobileNav/>
         <Analytics/>
       </body>
     </html>
