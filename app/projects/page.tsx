@@ -1,26 +1,9 @@
- import { useState } from 'react';
+ 'use client';
+
+import { useState } from 'react';
 import { motion } from 'framer-motion';
 import Image from 'next/image';
 import SEO from '../components/SEO';
-
-export const metadata = {
-  title: 'Projects | NQ Designs',
-  description: 'Explore our residential, commercial, and apartment design projects.',
-  metadataBase: new URL('https://nqdesigns.co'),
-  openGraph: {
-    title: 'Our Projects - NQ Designs',
-    description: 'View our stunning interior and architectural project portfolio.',
-    url: 'https://nqdesign.co/projects',
-    images: [
-      {
-        url: '/og-image.png',
-        width: 1200,
-        height: 630,
-      },
-    ],
-    type: 'website',
-  },
-}
 
 type Project = {
   title: string;
