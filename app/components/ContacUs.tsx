@@ -99,21 +99,22 @@ export default function ContactPage() {
       </section>
 
       {/* Map with Frame */}
-      <section className="px-6 md:px-20 pb-16">
-        <motion.div
-          initial={{ opacity: 0 }}
-          whileInView={{ opacity: 1 }}
-          transition={{ duration: 0.6 }}
-          className="rounded-2xl overflow-hidden shadow-2xl border-2 border-gray-100"
-        >
-          <iframe
-            className="w-full h-[400px]"
-            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3558.857150187944!2d80.9461596!3d26.8669276!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x399bfd4c1ab8c00f%3A0x1e957c83e42b4e1!2sLucknow!5e0!3m2!1sen!2sin!4v1681586000000!5m2!1sen!2sin"
-            allowFullScreen
-            loading="lazy"
-          ></iframe>
-        </motion.div>
-      </section>
-    </div>
+     <section className="px-6 md:px-20 pb-16">
+  <motion.div
+    initial={{ opacity: 0 }}
+    whileInView={{ opacity: 1 }}
+    transition={{ duration: 0.6 }}
+    className="rounded-2xl overflow-hidden shadow-2xl border-2 border-gray-100"
+  >
+    <iframe
+      className="w-full h-[400px]"
+      src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d264.6391771333156!2d81.01678081458712!3d26.822575621544292!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x399be3002d13af5f%3A0xf5a874af05ecf2b!2sNQ%20Designs%20Pvt%20Ltd!5e0!3m2!1sen!2sin!4v1751009324476!5m2!1sen!2sin"
+      allowFullScreen
+      loading="lazy"
+      referrerPolicy="no-referrer-when-downgrade"
+    ></iframe>
+  </motion.div>
+</section>
+
   );
 }
