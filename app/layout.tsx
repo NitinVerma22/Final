@@ -4,6 +4,7 @@ import "./globals.css";
 import DraggableWhatsAppButton from "./components/DraggableWhatsAppButton";
 import Header from "./components/Header";
 import Footer from "./components/Footer";
+import MobileNav from "./components/MobileNav";
 import Analytics from "./components/Analytics";
 
 const geistSans = Geist({
@@ -65,6 +66,7 @@ export default function RootLayout({ children }: Readonly<{
         {children}
         <DraggableWhatsAppButton />
         <Footer/>
+        <MobileNav/>
         <Analytics/>
       </body>
     </html>
